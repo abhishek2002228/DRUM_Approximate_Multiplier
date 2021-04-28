@@ -1,5 +1,5 @@
 $date
-	Wed Apr 28 23:07:06 2021
+	Thu Apr 29 01:57:28 2021
 $end
 $version
 	Icarus Verilog
@@ -9,12 +9,17 @@ $timescale
 $end
 $scope module tb_lod $end
 $var wire 8 ! leading_one [7:0] $end
-$var reg 8 " operand [7:0] $end
+$var wire 3 " encoded [2:0] $end
+$var reg 8 # operand [7:0] $end
+$scope module e1 $end
+$var wire 8 $ in [7:0] $end
+$var reg 3 % out [2:0] $end
+$upscope $end
 $scope module l1 $end
-$var wire 8 # operand [7:0] $end
-$var wire 8 $ rev_output [7:0] $end
-$var wire 8 % rev_operand [7:0] $end
-$var wire 8 & leading_one [7:0] $end
+$var wire 8 & operand [7:0] $end
+$var wire 8 ' rev_output [7:0] $end
+$var wire 8 ( rev_operand [7:0] $end
+$var wire 8 ) leading_one [7:0] $end
 $scope begin genblk1[0] $end
 $upscope $end
 $scope begin genblk1[1] $end
@@ -52,18 +57,24 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b100000 &
-b1000100 %
-b100 $
+b100000 )
+b1000100 (
+b100 '
+b100010 &
+b101 %
+b100000 $
 b100010 #
-b100010 "
+b101 "
 b100000 !
 $end
 #2
+b110 "
+b110 %
 b1000000 !
-b1000000 &
-b10 $
-b1110 %
-b1110000 "
+b1000000 $
+b1000000 )
+b10 '
+b1110 (
 b1110000 #
+b1110000 &
 #5
