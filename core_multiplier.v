@@ -5,7 +5,7 @@ module fourxfour_wallace_tree(A,B,C);
     input wire [3:0] A, B;
     output wire [7:0] C;
 
-    wire [3:0] p0, p1, p2, p3; // parttial products, indexed using B subscripts
+    wire [3:0] p0, p1, p2, p3; // partial products, indexed using B subscripts
     wire [4:1] s0, s1, s2; // partial sums, s2 is final sum
     wire [4:1] c0, c1, c2; //partial carries
     wire Cout;
