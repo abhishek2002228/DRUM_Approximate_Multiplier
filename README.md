@@ -16,7 +16,7 @@ The Core Multiplier utilizes a 4x4 high speed Wallace Tree Multiplier which is a
 
 ## Leading One Detector
 
-This module takes in a *N bit* bit input and throws out a *N bit* output which marks the position of the leading *1* in the bit field. This is then taken in by an encoder which spits out the *log_2(N) bit* encoded value of the position.
+This module takes in a *N bit* input and throws out a *N bit* output which marks the position of the leading *1* in the bit field. This is then taken in by an encoder which spits out the *log_2(N) bit* encoded value of the position.
 
 ## Simulation
 
